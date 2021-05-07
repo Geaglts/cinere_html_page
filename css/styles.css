@@ -1,0 +1,166 @@
+/* Importando fuentes */
+@font-face {
+    font-family: "Lato";
+    src: url("./fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/Roboto/Roboto-Bold.ttf");
+}
+
+*:focus {
+    outline: none !important;
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+button {
+    transition: all 300ms;
+}
+
+button:hover {
+    transform: translateY(-7px);
+}
+
+canvas {
+    display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* Utilidades */
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+/* Mis estilos */
+
+.containerHeader {
+    height: 100vh;
+    background-color: #0096e0;
+    background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 8em;
+    position: absolute;
+    z-index: 1;
+}
+
+.item h1 {
+    font-family: "Lato";
+    font-weight: lighter;
+    line-height: 4rem;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.item p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Lato";
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.item button {
+    width: 10rem;
+    height: 3rem;
+    background: transparent;
+    font-family: "Lato";
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.item:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navegacion */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0.5rem 0;
+}
+
+nav .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor .containerL {
+    display: inherit;
+    align-items: center;
+}
+
+.containerL h2 {
+    font-family: "Roboto";
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.containerLinks {
+    margin-left: 4rem;
+}
+
+.containerLinks a {
+    margin-right: 2.5rem;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.containerR {
+    display: inherit;
+    align-items: center;
+}
+
+.containerR button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-family: "Lato";
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+}
